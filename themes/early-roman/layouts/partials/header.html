@@ -20,12 +20,10 @@
                 <div class="row full-height align-items-center">
                 <div class="col-md-12 justify-content-center">
                     <ul class="list-unstyled menu">
-                    <li class="active"><a href="index.html" class="animsition-link">Home</a></li>
-                    <li><a href="hotel.html" class="animsition-link">Literature</a></li>
-                    <li><a href="gallery.html" class="animsition-link">Gallery</a></li>
-                    <li><a href="blog.html" class="animsition-link">Sneakers</a></li>
-                    <li><a href="about.html" class="animsition-link">About Us</a></li>
-                    <li><a href="contact.html" class="animsition-link">Contact</a></li>
+                    {{ $currentPage := . }}
+                    {{ range .Site.Menus.main }}
+                    <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}"><a href="{{.URL}}" class="animsition-link">{{.Name}}</a></li>
+                    {{ end }}
                     </ul>
                 </div>
                 </div>
@@ -42,7 +40,7 @@
     <div class="container">
     <div class="row site-hero-inner justify-content-center align-items-center">
         <div class="col-md-10 text-center">
-        <h1 class="heading mb-4" data-aos="fade-up">Thoughts &amp; Stories</h1>
+        <h1 class="heading mb-4" data-aos="fade-up">Master channel</h1>
         <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">
             by <a href="https://www.linkedin.com/in/mrpark97/" target="_blank">Evgeniy Pak</a>
         </p>

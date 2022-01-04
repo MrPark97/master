@@ -1,47 +1,63 @@
 {{ define "main" }}
+<section class="section slider-section" id="next-section">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-5">
+      <div class="col-md-8">
+        <h2 class="heading" data-aos="fade-up">The Course of Empire</h2>
+        <p class="lead" data-aos="fade-up" data-aos-delay="100">Thomas Cole</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="slider-item">
+            <img src="images/The course of empire/The_Savage_State.jpg" alt="The Savage State" class="img-fluid">
+          </div>
+          <div class="slider-item">
+            <img src="images/The course of empire/The_Arcadian_or_Pastoral_State.jpg" alt="The Arcadian" class="img-fluid">
+          </div>
+          <div class="slider-item">
+            <img src="images/The course of empire/The_Consummation.jpg" alt="The Consummation of Empire" class="img-fluid">
+          </div>
+          <div class="slider-item">
+            <img src="images/The course of empire/Destruction.jpg" alt="Image placeholder" class="img-fluid">
+          </div>
+          <div class="slider-item">
+            <img src="images/The course of empire/Desolation.jpg" alt="Image placeholder" class="img-fluid">
+          </div>
+        </div>
+        <!-- END slider -->
+      </div>
+    
+    </div>
+  </div>
+</section>
+<!-- END section -->
+
+
 <section class="section blog-post-entry bg-light slant-top">
   <div class="container">
     <div class="row justify-content-center text-center mb-5">
       <div class="col-md-8 primary-bg-text">
         <h2 class="heading" data-aos="fade-up">Recent Blog Post</h2>
         <p class="lead" data-aos="fade-up">Information is not knowledge.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="media media-custom d-block mb-4">
-          <a href="#" class="mb-4 d-block"><img src="images/shoe_dog.jpeg" alt="Shoe Dog" class="img-fluid"></a>
-          <div class="media-body">
-            <span class="meta-post">May 22, 2021</span>
-            <h2 class="mt-0 mb-3"><a href="#">Shoe Dog, Phil Knight</a></h2>
-            <p>A book for young people who can't find a place for themselves</p>
+        <div class="row">
+        {{ range (first 6 .Paginator.Pages) }}
+          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
+              <div class="media media-custom d-block mb-4">
+                  <a href="{{ .RelPermalink }}" class="mb-4 d-block">
+                    <img src="images/shoe_dog.jpeg" alt="Shoe Dog" class="img-fluid"></a>
+                    <div class="media-body">
+                    <span class="meta-post">May 22, 2021</span>
+                    <h2 class="mt-0 mb-3"><a href="#">{{ .Title }}, {{ .Params.author }}</a></h2>
+                    <p>{{ .Summary }}</p>
+                  </div>
+              </div>
           </div>
-        </div>
-
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="200">
-        <div class="media media-custom d-block mb-4">
-          <a href="#" class="mb-4 d-block"><img src="images/doctor_zhivago.webp" alt="Доктор Живаго" class="img-fluid"></a>
-          <div class="media-body">
-            <span class="meta-post">May 22, 2021</span>
-            <h2 class="mt-0 mb-3"><a href="#">Doctor Zhivago, Boris Pasternak</a></h2>
-            <p>The best Russian novel about love</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 col-12 post" data-aos="fade-up" data-aos-delay="300">
-        <div class="media media-custom d-block mb-4">
-          <a href="#" class="mb-4 d-block"><img src="images/atlas_shrugged.jpeg" alt="The Ninth Wave" class="img-fluid"></a>
-          <div class="media-body">
-            <span class="meta-post">May 22, 2021</span>
-            <h2 class="mt-0 mb-3"><a href="#">Atlas Shrugged</a></h2>
-            <p>Who is John Galt?</p>
-          </div>
+        {{ end }}
         </div>
       </div>
     </div>
-  </div>
 </section>
 <!-- END section -->
 {{ end }}

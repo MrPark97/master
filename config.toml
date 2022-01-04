@@ -2,3 +2,17 @@ baseURL = 'https://mrpark97.github.io/master/'
 languageCode = 'en-us'
 title = 'Master'
 theme = "early-roman"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+  [[menu.main]]
+    name = "About Us"
+    url = "/about/"
+    weight = 3
