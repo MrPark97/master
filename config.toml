@@ -1,4 +1,0 @@
-baseURL = 'https://mrpark97.github.io/master/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "ananke"
