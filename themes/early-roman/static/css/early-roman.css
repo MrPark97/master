@@ -110,4 +110,9 @@ h1, h2, h3, h4, h5 {
   clear: both;
 }
 
+#write > div > p {
+  text-align: center;
+  color: #f2efde;
+}
+
 /*# sourceMappingURL=early-roman.css.map */
