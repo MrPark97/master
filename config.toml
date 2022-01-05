@@ -2,7 +2,7 @@ baseURL = 'https://mrpark97.github.io/master/'
 languageCode = 'en-us'
 title = 'Master'
 theme = 'early-roman'
-pagination = 6
+paginate= 6
 
 [menu]
   [[menu.main]]
