@@ -57,20 +57,20 @@
 
 #write h1 {
   font-family: "Petrogradski", arial, sans-serif;
-  color: DarkOliveGreen;
+  color: #eeb092;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #write h2 {
   font-family: "Petrogradski", arial, sans-serif;
-  color: #c09e80;
+  color: coral;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 #write h2:after {
-  border-bottom: 1px solid #c09e80;
+  border-bottom: 1px solid coral;
   content: "";
   width: 100px;
   display: block;
@@ -78,8 +78,29 @@
   height: 1px;
 }
 
+#write {
+  background-color: #21211a;
+}
+
 #write img {
   width: 100%;
+}
+
+#write blockquote {
+  padding-left: 1em;
+  color: #CFA94A;
+  border-left: 1px solid #CFA94A;
+}
+
+#write blockquote strong {
+  width: inherit;
+  float: right;
+}
+
+#write blockquote::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 /*# sourceMappingURL=early-roman.css.map */
