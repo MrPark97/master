@@ -39,6 +39,12 @@
   font-family: "Petrogradski";
   src: url("../fonts/Petrogradski.otf");
 }
+h1, h2, h3, h4, h5 {
+  color: #21211a;
+  font-family: "Brygada", times, serif;
+  font-weight: bold;
+}
+
 #write {
   padding: 4rem;
 }
