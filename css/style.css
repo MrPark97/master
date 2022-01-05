@@ -9,12 +9,12 @@ body {
 
 ::-moz-selection {
   color: #f2efde;
-  background: DarkOliveGreen;
+  background: #803e73;
 }
 
 ::selection {
   color: #f2efde;
-  background: DarkOliveGreen;
+  background: #803e73;
 }
 
 a {
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5 {
   border-width: 2px;
 }
 .btn.btn-primary:hover {
-  background: DarkOliveGreen;
+  background: #803e73;
 }
 
 .btn, .form-control {
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5 {
   border: 2px solid #ecece7;
 }
 .form-control:active, .form-control:focus {
-  border: 2px solid DarkOliveGreen;
+  border: 2px solid #803e73;
 }
 
 textarea.form-control {
@@ -122,10 +122,10 @@ textarea.form-control {
   position: relative;
 }
 .site-navbar nav .menu li a:hover {
-  color: DarkOliveGreen;
+  color: #803e73;
 }
 .site-navbar nav .menu li.active a {
-  color: DarkOliveGreen;
+  color: #803e73;
 }
 .site-navbar nav .menu li.active a:before {
   width: 100%;
@@ -327,7 +327,7 @@ textarea.form-control {
   color: #21211a;
 }
 .visit-section .visit a:hover {
-  color: DarkOliveGreen;
+  color: #803e73;
 }
 .visit-section .visit img {
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
@@ -342,7 +342,7 @@ textarea.form-control {
 }
 .visit-section .reviews-star span {
   font-size: 18px;
-  color: DarkOliveGreen;
+  color: #803e73;
 }
 .visit-section .reviews-count {
   color: #ccc;
@@ -356,7 +356,7 @@ textarea.form-control {
 .bg-light {
   position: relative;
   overflow: hidden;
-  background: DarkOliveGreen !important;
+  background: #803e73 !important;
 }
 .bg-light:before {
   content: "";
@@ -495,7 +495,7 @@ textarea.form-control {
   color: #21211a;
 }
 .post .media-custom a:hover {
-  color: DarkOliveGreen;
+  color: #803e73;
 }
 .post .media-custom .media-body {
   padding: 10px 30px;
@@ -505,7 +505,7 @@ textarea.form-control {
 }
 
 .media-custom .meta-post {
-  color: #36702a;
+  color: #558dc1;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
@@ -839,7 +839,7 @@ textarea.form-control {
   letter-spacing: 0.2em;
   font-family: "Mukta Mahee", arial, sans-serif;
   text-transform: uppercase;
-  color: DarkOliveGreen;
+  color: #803e73;
   font-weight: bold;
 }
 .contact-section form.bg-white {
@@ -876,7 +876,7 @@ textarea.form-control {
   margin-bottom: 10px;
 }
 .custom-pagination .page-item.active .page-link {
-  background: DarkOliveGreen;
+  background: #803e73;
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.2);
 }
 

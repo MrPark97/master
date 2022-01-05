@@ -58,20 +58,20 @@
 
 #write h1 {
   font-family: "Petrogradski", arial, sans-serif;
-  color: #eeb092;
+  color: #c1c9be;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
 #write h2 {
   font-family: "Petrogradski", arial, sans-serif;
-  color: coral;
+  color: #c5915f;
   text-align: center;
   margin-bottom: 1.2rem;
 }
 
 #write h2:after {
-  border-bottom: 1px solid coral;
+  border-bottom: 1px solid #c5915f;
   content: "";
   width: 100px;
   display: block;
