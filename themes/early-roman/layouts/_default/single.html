@@ -1,6 +1,11 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<div id="next-section">
+<div class="container" id="write">
+<div class="metadata">
 {{ partial "metadata.html" . }}
+</div>
 <br><br>
 {{ .Content }}
+</div>
+</div>
 {{ end }}

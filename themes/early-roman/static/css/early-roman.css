@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Brygada";
+  src: url("../fonts/Brygada1918-Regular.otf");
+}
+@font-face {
+  font-family: "Brygada";
+  src: url("../fonts/Brygada1918-SemiBold.otf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Brygada";
+  src: url("../fonts/Brygada1918-SemiBoldItalic.otf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brygada";
+  src: url("../fonts/Brygada1918-RegularItalic.otf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brygada";
+  src: url("../fonts/Brygada1918-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Brygada";
+  src: url("../fonts/Brygada1918-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Brygada";
+  src: url("../fonts/Brygada1918-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Petrogradski";
+  src: url("../fonts/Petrogradski.otf");
+}
+#write {
+  padding: 4rem;
+}
+
+#write .metadata .btn {
+  margin-left: 0.5rem;
+}
+
+#write p {
+  font-family: "Brygada", times, serif;
+}
+
+#write strong {
+  font-weight: bold;
+}
+
+#write h1 {
+  font-family: "Petrogradski", arial, sans-serif;
+  color: DarkOliveGreen;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#write h2 {
+  font-family: "Petrogradski", arial, sans-serif;
+  color: #c09e80;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#write h2:after {
+  border-bottom: 1px solid #c09e80;
+  content: "";
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  height: 1px;
+}
+
+#write img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=early-roman.css.map */

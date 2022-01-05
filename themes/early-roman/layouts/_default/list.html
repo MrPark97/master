@@ -1,6 +1,8 @@
 {{ define "main" }}
 
-<section class="section bg-light-2 post">
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+
+<section class="section bg-light-2 post" id="next-section">
     <div class="container">
     <div class="row">
         <div class="col-md-8">
@@ -10,10 +12,11 @@
             {{ range $paginator.Pages }}
             <div class="col-md-6">
                 <div class="media media-custom d-block mb-4">
-                <a href="{{ .RelPermalink }}" class="mb-4 d-block"><img src="/master/images/img_2.jpg" alt="Image placeholder" class="img-fluid"></a>
+                <a href="{{ .RelPermalink }}" class="mb-4 d-block"><img src="{{ .RelPermalink }}image.jpg" alt="Image placeholder" class="img-fluid"></a>
                 <div class="media-body">
-                <span class="meta-post">February 26, 2018</span>
-                <h2 class="mt-0 mb-3"><a href="{{ .RelPermalink }}">{{ .Title }} by {{ .Params.author }}</a></h2>
+                <span class="meta-post">{{ .PublishDate.Format $dateFormat }}</span>
+                <h2 class="mt-0 mb-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <p> by {{ .Params.author }}</p>
                 </div>
             </div>
             </div>
@@ -143,10 +146,10 @@
                 {{ range first 4 (shuffle (where .Data.Pages "Type" "posts")) }}
                 <li>
                     <a href="{{ .RelPermalink }}" class="d-flex">
-                    <span class="mr-3 image"><img src="/master/images/img_1.jpg" alt="Image placeholder" class="img-fluid"></span>
+                    <span class="mr-3 image"><img src="{{ .RelPermalink }}image.jpg" alt="Image placeholder" class="img-fluid"></span>
                     <div>
-                        <span class="meta">February 27, 2018</span>
-                        <h3>{{ .Title }} by {{ .Params.author }}</h3>
+                        <span class="meta">{{ .PublishDate.Format $dateFormat }}</span>
+                        <h3>{{ .Title }}</h3>
                     </div>
                     </a>
                 </li>

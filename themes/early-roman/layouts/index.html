@@ -11,19 +11,19 @@
       <div class="col-md-12">
         <div class="home-slider major-caousel owl-carousel mb-5" data-aos="fade-up" data-aos-delay="200">
           <div class="slider-item">
-            <img src="images/The course of empire/The_Savage_State.jpg" alt="The Savage State" class="img-fluid">
+            <img src="/master/images/The course of empire/The_Savage_State.jpg" alt="The Savage State" class="img-fluid">
           </div>
           <div class="slider-item">
-            <img src="images/The course of empire/The_Arcadian_or_Pastoral_State.jpg" alt="The Arcadian" class="img-fluid">
+            <img src="/master/images/The course of empire/The_Arcadian_or_Pastoral_State.jpg" alt="The Arcadian" class="img-fluid">
           </div>
           <div class="slider-item">
-            <img src="images/The course of empire/The_Consummation.jpg" alt="The Consummation of Empire" class="img-fluid">
+            <img src="/master/images/The course of empire/The_Consummation.jpg" alt="The Consummation of Empire" class="img-fluid">
           </div>
           <div class="slider-item">
-            <img src="images/The course of empire/Destruction.jpg" alt="Image placeholder" class="img-fluid">
+            <img src="/master/images/The course of empire/Destruction.jpg" alt="Image placeholder" class="img-fluid">
           </div>
           <div class="slider-item">
-            <img src="images/The course of empire/Desolation.jpg" alt="Image placeholder" class="img-fluid">
+            <img src="/master/images/The course of empire/Desolation.jpg" alt="Image placeholder" class="img-fluid">
           </div>
         </div>
         <!-- END slider -->
@@ -41,23 +41,26 @@
       <div class="col-md-8 primary-bg-text">
         <h2 class="heading" data-aos="fade-up">Recent Blog Post</h2>
         <p class="lead" data-aos="fade-up">Information is not knowledge.</p>
-        <div class="row">
-        {{ range (first 6 .Paginator.Pages) }}
-          <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
-              <div class="media media-custom d-block mb-4">
-                  <a href="{{ .RelPermalink }}" class="mb-4 d-block">
-                    <img src="images/shoe_dog.jpeg" alt="Shoe Dog" class="img-fluid"></a>
-                    <div class="media-body">
-                    <span class="meta-post">May 22, 2021</span>
-                    <h2 class="mt-0 mb-3"><a href="#">{{ .Title }}, {{ .Params.author }}</a></h2>
-                    <p>{{ .Summary }}</p>
-                  </div>
-              </div>
-          </div>
-        {{ end }}
-        </div>
       </div>
     </div>
+    <div class="row">
+    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+
+    {{ range (first 6 .Paginator.Pages) }}
+      <div class="col-lg-4 col-md-6 col-sm-6 col-12 post" data-aos="fade-up" data-aos-delay="100">
+          <div class="media media-custom d-block mb-4">
+              <a href="{{ .RelPermalink }}" class="mb-4 d-block">
+                <img src="{{ .RelPermalink }}/image.jpg" alt="Shoe Dog" class="img-fluid"></a>
+                <div class="media-body">
+                <span class="meta-post">{{ .PublishDate.Format $dateFormat }}</span>
+                <h2 class="mt-0 mb-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                <p>{{ .Params.author }}</p>
+              </div>
+          </div>
+      </div>
+    {{ end }}
+    </div>
+  </div>
 </section>
 <!-- END section -->
 {{ end }}
