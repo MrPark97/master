@@ -8,5 +8,5 @@ author: "Ecclesiastes"
 
 ![Lion](image.jpg)
 
->Qui enim sociatur omnibus viventibus, habet fiduciam: melior est canis vivus leone mortuo.
+>Qui enim sociatur omnibus viventibus, habet fiduciam: melior est canis vivus leone mortuo.  
 >**&mdash; Ecclesiastes**
