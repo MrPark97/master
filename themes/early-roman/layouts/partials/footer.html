@@ -6,7 +6,7 @@
         <ul class="list-unstyled link">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-            <li class="animsition-link {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}"><a href="{{.URL}}">{{.Name}}</a></li>
+            <li><a href="{{.URL}}">{{.Name}}</a></li>
             {{ end }}
         </ul>
         </div>
