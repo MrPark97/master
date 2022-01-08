@@ -5,6 +5,9 @@ theme = 'early-roman'
 paginate= 6
 googleAnalytics = 'G-H2Y2NCSZP8'
 
+[params]
+  yandexMetrika = 87079237
+
 [menu]
   [[menu.main]]
     name = "Home"
