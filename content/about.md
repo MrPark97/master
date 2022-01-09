@@ -5,6 +5,7 @@ draft: false
 type: "page"
 layout: "about"
 author: "Evgeniy Pak"
+tags: ["Poetry", "Поэзия"]
 ---
 
 # THE FALL OF ROME
