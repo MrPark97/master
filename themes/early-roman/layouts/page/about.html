@@ -17,13 +17,15 @@
 </section>
 <!-- END section -->
 
+<div id="next-section">
 <div id="write">
-<div class="container" id="next-section">
+<div class="container">
 <div class="metadata">
 {{ partial "metadata.html" . }}
 </div>
 <br><br>
 {{ .Content }}
+</div>
 </div>
 </div>
 {{ with .Resources.GetMatch "audio.txt" }}
